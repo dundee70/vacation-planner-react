@@ -1,4 +1,4 @@
-# Ferie Planner React
+# Vacation Planner React
 
 Web app per la pianificazione delle ferie settimanali aziendali.
 
