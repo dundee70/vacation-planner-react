@@ -1,0 +1,9 @@
+.ag-theme-alpine {
+  --ag-font-size: 11px;
+}
+
+@media (max-width: 768px) {
+  .ag-theme-alpine {
+    --ag-font-size: 10px;
+  }
+}

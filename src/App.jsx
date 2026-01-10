@@ -8,7 +8,12 @@ export default function App() {
 
   useEffect(() => {
     supabase.auth.getUser().then(r => setUser(r.data.user));
-    supabase.auth.onAuthStateChange((_e, s) => setUser(s?.user));
+
+    const { data: listener } = supabase.auth.onAuthStateChange(
+      (_event, session) => setUser(session?.user ?? null)
+    );
+
+    return () => listener.subscription.unsubscribe();
   }, []);
 
   return user ? <Dashboard user={user} /> : <Login />;
