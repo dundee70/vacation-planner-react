@@ -23,13 +23,13 @@ const styles = {
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '10px 16px',
-    background: '#1f2937',
-    color: '#fff'
+    background: '#111827',
+    color: '#f9fafb'
   },
   role: {
     marginLeft: 8,
     fontSize: 12,
-    opacity: 0.8
+    opacity: 0.7
   },
   logout: {
     background: '#ef4444',

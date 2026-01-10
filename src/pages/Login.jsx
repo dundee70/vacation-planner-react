@@ -23,8 +23,10 @@ export default function Login() {
   return (
     <div style={styles.page}>
       <div style={styles.card}>
-        <h2 style={{ marginBottom: 20 }}>Ferie Planner</h2>
-
+        <h2 style={{ marginBottom: 10, fontWeight: 600 }}>Vacation Planner</h2>
+        <p style={{ fontSize: 13, color: '#6b7280', marginBottom: 20 }}>
+          Pianificazione ferie reparto
+        </p>
         <input
           style={styles.input}
           placeholder="Email"
@@ -65,19 +67,23 @@ const styles = {
   },
   input: {
     width: '100%',
+    height: 40,
     padding: 10,
     marginBottom: 12,
     borderRadius: 4,
-    border: '1px solid #d1d5db'
+    border: '1px solid #d1d5db',
+    boxSizing: 'border-box'
   },
   button: {
     width: '100%',
+    height: 40,
     padding: 10,
     background: '#2563eb',
     color: 'white',
     border: 'none',
     borderRadius: 4,
-    cursor: 'pointer'
+    cursor: 'pointer',
+    boxSizing: 'border-box'
   },
   error: {
     color: '#dc2626',

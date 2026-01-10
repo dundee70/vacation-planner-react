@@ -31,6 +31,7 @@ export default function VacationGrid({
           onChange={() => onChange(params.data.id, w)}
         />
       ),
+      cellClass: 'no-ellipsis',
       cellStyle: params => {
         if (params.value) return { background: "#c8f7c5" };
         if (w.is_summer) return { background: "#fff3cd" };
@@ -51,6 +52,7 @@ export default function VacationGrid({
   return (
     <div className="ag-theme-alpine" style={{ height: '80vh' }}>
       <AgGridReact
+        rowHeight={36}
         rowData={rows}
         columnDefs={columns}
         suppressHorizontalScroll={false}
